@@ -1,0 +1,11 @@
+[Unit]
+Description=VineScribeEmailer Service
+After=network.target
+
+[Service]
+User=<username>
+ExecStart=</path/to/poetry> run python src/winedb/main.py
+WorkingDirectory=</path/to/working/directory>
+
+[Install]
+WantedBy=multi-user.target
