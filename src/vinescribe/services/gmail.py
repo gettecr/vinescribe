@@ -583,7 +583,7 @@ class GmailMessageService:
                     user_id=user_id
                 )
                 
-                file_data = base64.urlsafe_b64decode(attachment["data"].encode("UTF-8"))
+                file_data = attachment["data"]
                 logger.debug(f"FileData for {message['id']}, {part['filename']} found via attachmentId")
         
         if not file_data:
