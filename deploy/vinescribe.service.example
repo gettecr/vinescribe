@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 User=<username>
-ExecStart=</path/to/poetry> run python src/winedb/main.py
+ExecStart=</path/to/poetry> run python src/vinescribe/main.py
 WorkingDirectory=</path/to/working/directory>
 
 [Install]
